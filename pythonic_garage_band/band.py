@@ -7,7 +7,7 @@ class Band :
     def __init__(self,name,members=None):
         self.name =name
         self.members = members
-        Band.instances.append(self.name)
+        Band.instances.append(self)
 
     def __str__(self) :
         return f"The band {self.name}"
